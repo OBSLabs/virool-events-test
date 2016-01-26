@@ -6,6 +6,12 @@ class EventsController < ApplicationController
   end
 
   def show
+    render json: {event: @event}
+  end
+
+  def create
+    @event.name = params[:name]
+    @event.save!
   end
 
   def participants
