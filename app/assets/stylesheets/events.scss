@@ -6,7 +6,6 @@
   padding: 10px;
 }
 
-
 .event {
   display: inline-block;
   min-height: 300px;
@@ -20,9 +19,9 @@
     .event__information {
       min-height: 149px;
     }
+
   }
 }
-
 
 .event__header {
   height: 150px;
@@ -57,4 +56,17 @@
   font-size: 12px;
   cursor: pointer;
   outline: none;
+}
+
+.event__text-container {
+  width: 100%;
+  min-height: 149px;
+}
+
+.event__text-container p{
+  font-size: 20px;
+  height: 100%;
+  margin: 10;
+  padding: 5;
+  padding: 10px;
 }

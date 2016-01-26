@@ -9,9 +9,10 @@ class EventsController < ApplicationController
     render json: {event: @event}
   end
 
-  def create
-    @event.name = params[:name]
+  def update
+    @event.title = params[:title]
     @event.save!
+    render json: {msg: 'success'}
   end
 
   def participants
