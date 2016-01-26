@@ -6,6 +6,7 @@ Rails.application.routes.draw do
   root 'events#index'
 
   get 'events/:event_id' => 'events#show'
+  put 'events/:event_id' => 'events#update'
   get 'events/:event_id/participants' => 'events#participants'
 
   # Example of regular route:
